@@ -1,0 +1,43 @@
+
+# muphy 2.0 alpha
+
+
+
+# -----Compile (using 12 processes):-----
+make -j 12
+
+# -----Remove all build files:-----
+make clean
+
+
+
+# -----Compilation settings:-----
+# As required, you can in the makefile comment out the commands
+# for gpu compilation (pgi compiler) and instead comment in
+# the commands for cpu compilation (gcc compiler).
+#
+# Using the SETTINGS variable in the makefile, you can also turn on
+# single precision and/or 2D optimization for the fluid gpu code.
+
+
+
+# -----Settings on davinci:-----
+# In the .bashrc in the davinci home directory add for gpu computations:
+module load nvhpc
+# Or for cpu compuations:
+module load gcc mpi/openmpi-x86_64
+
+
+
+# -----Example run commands:-----
+# Alwasy make sure that in framework/parameter.cc the
+# variable nproc is set so that nproc[0]*nproc[1]*nproc[2]
+# is identical to the number of processes you start with
+# mpirun.
+
+# On eight davinci c2 gpus:
+mpirun -np 8 --machinefiles/machines-c2-gpu ./muphy2
+
+# On davinci c1 and c2 cpus:
+mpirun -np 128 --machinefiles/machines-all ./muphy2
+

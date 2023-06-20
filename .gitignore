@@ -1,0 +1,6 @@
+bin/muphy2
+bin/*.o
+bin/*.mod
+bin/*.d
+bin/*.gpu
+bin/*.h
