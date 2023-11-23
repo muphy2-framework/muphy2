@@ -4,7 +4,7 @@
 
 ![muphyII_reconnection_coupled_simulation_snapshot](muphyII_reconnection_coupled_simulation_snapshot.png)
 
-The `muphyII` code is a HPC simulation framework for plasma
+The `muphyII` code is an HPC simulation framework for plasma
 physics and targeted at collisionless space plasmas in particular. `muphyII`
 utilizes a hierarchy of models with different inherent scales to
 address the separation of scales problem typically encountered in
