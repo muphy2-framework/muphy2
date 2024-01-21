@@ -82,9 +82,9 @@ Block::Block()
     << " If this software contributes to findings you decide to present or publish,"  << std::endl
     << " please be so kind and cite the reference below. Thank you!"                  << std::endl
     << std::endl
-    << " Allmann-Rahn, F., Lautenbach, S., Deisenhofer, M., Grauer, R., 2023."        << std::endl 
-    << " The muphyII Code: Multiphysics Plasma Simulation on Large HPC Systems."      << std::endl 
-    << " arXiv. https://doi.org/10.48550/arXiv.2305.01487"                            << std::endl
+    << " Allmann-Rahn, F., Lautenbach, S., Deisenhofer, M., Grauer, R., 2024."        << std::endl 
+    << " The muphyII code: Multiphysics plasma simulation on large HPC systems."      << std::endl 
+    << " Computer Physics Communications. https://doi.org/10.1016/j.cpc.2023.109064"  << std::endl
     << "----------------------------------------------------------------------------" << std::endl;
 
     // create output directory

@@ -2,7 +2,7 @@
 
 # The muphyII Plasma Simulation Framework
 
-![muphyII_reconnection_coupled_simulation_snapshot](muphyII_reconnection_coupled_simulation_snapshot.png)
+![muphyII_reconnection_coupled_simulation_snapshot](images/muphyII_reconnection_coupled_simulation_snapshot.png)
 
 The `muphyII` code is an HPC simulation framework for plasma
 physics and targeted at collisionless space plasmas in particular. `muphyII`
@@ -17,14 +17,15 @@ stepping algorithms.
 
 ### LICENCE and ACKNOWLEDEMENT
 
-The muphyII code is free and open source software licensed under the Mozilla Public
+The `muphyII` code is free and open source software licensed under the Mozilla Public
 License v. 2.0 which is available at https://mozilla.org/MPL/2.0/.
 
 If the software contributes to findings you decide to present or publish, please be so kind
 and cite the reference below. Thank you!
 
-> Allmann-Rahn, F., Lautenbach, S., Deisenhofer, M., Grauer, R., 2023. *The muphyII Code: Multiphysics Plasma Simulation on Large
-HPC systems*. arXiv. https://doi.org/10.48550/arXiv.2305.01487
+> Allmann-Rahn, F., Lautenbach, S., Deisenhofer, M., Grauer, R., 2023.
+*The muphyII code: Multiphysics plasma simulation on large HPC systems*. 
+Computer Physics Communications. https://doi.org/10.1016/j.cpc.2023.109064
 
 
 ### MANUAL
@@ -81,9 +82,7 @@ Changes to the parameter file require recompilation.
 
 Run the `muphy2` executive in parallel using mpirun, srun, or your sumbission manager. Examples are 
 
-`mpirun -np 8 --machinefiles/machines-c2-gpu ./muphy2`
-
-`mpirun -np 128 --machinefiles/machines-all ./muphy2`
+`mpirun -np 16 --oversubscribe ./muphy2`
 
 `srun ./muphy2`
 
